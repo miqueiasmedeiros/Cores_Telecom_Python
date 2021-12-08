@@ -10,8 +10,15 @@ Original file is located at
 
 numfibra = int(input('Digite o número da fibra: '))
 
+if ((numfibra < 1) or (numfibra > 288)): 
+    print("## Número inválido")
+    os.system("pause")
+    exit()
+
 corfibra = [
-    'verde', 'amarela', 'branca', 'azul', 'vermelha','violeta', 'marrom', 'rosa', 'preta', 'cinza', 'lanranja', 'aqua'
+    'verde', 'amarela', 'branca', 'azul', 
+    'vermelha','violeta', 'marrom', 'rosa', 
+    'preta', 'cinza', 'lanranja', 'aqua'
 ]
 n = numfibra % 12
 grupo = numfibra * 24 / 288
@@ -21,57 +28,4 @@ if n == 0:
 else :
     print('cor:', corfibra[n-1], '\ngrupo: ', int(grupo) + 1)
 
-print('## Número inválido')
-
 os.system("pause")
-
-# for cor in corfibra:
-    
-#     if numfibra % 12 == 0:
-#         print('cor:', corfibra[11])
-#     else:
-#         print('Este número não faz parte da tabela de cores!')
-#     break
-
-# numfibra = int(input('Digite o número da fibra: '))
-# corfibra = [
-#     'verde', 'amarela', 'branca', 'azul', 'vermelha','violeta', 'marrom', 'rosa', 'preta', 'cinza', 'lanranja', 'aqua'
-# ]
-
-# if numfibra % 12 == 1:
-#     print('cor:', corfibra[0])
-# elif numfibra % 12 == 2:
-#     print('cor:',corfibra[1])
-# elif numfibra % 12 == 3:
-#     print('cor:', corfibra[2])
-# elif numfibra % 12 == 4:
-#     print('cor:', corfibra[3])
-# elif numfibra % 12 == 5:
-#     print('cor:', corfibra[4]) 
-# elif numfibra % 12 == 6:
-#     print('cor:',corfibra[5])
-# elif numfibra % 12 == 7:
-#     print('cor:', corfibra[6])
-# elif numfibra % 12 == 8:
-#     print('cor:', corfibra[7])
-# elif numfibra % 12 == 9:
-#     print('cor:', corfibra[8])   
-# elif numfibra % 12 == 10:
-#     print('cor:', corfibra[9])
-# elif numfibra % 12 == 11:
-#     print('cor:', corfibra[10])   
-# elif numfibra % 12 == 0:
-#     print('cor:', corfibra[11])
-# else:
-#     print('Este número não faz parteda tabela de cores!')
-
-# numfibra = int(input('Digite o número da fibra: '))
-# corfibra = [
-#     'verde', 'amarela', 'branca', 'azul', 'vermelha','violeta', 'marrom', 'rosa', 'preta', 'cinza', 'lanranja', 'aqua'
-# ]
-# grupo = numfibra * 24 / 288
-
-# if numfibra % 12 == 1 and int(grupo):
-#   print('cor da fibra:', corfibra[0], 'gurpo:', grupo)
-# else:
-#   print('##número inválido')
