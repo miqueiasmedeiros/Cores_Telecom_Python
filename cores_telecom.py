@@ -14,9 +14,14 @@ corfibra = [
     'verde', 'amarela', 'branca', 'azul', 'vermelha','violeta', 'marrom', 'rosa', 'preta', 'cinza', 'lanranja', 'aqua'
 ]
 n = numfibra % 12
+grupo = numfibra * 24 / 288
+
 if n == 0:
-    print('cor:', corfibra[11])
-print('cor:', corfibra[n-1])
+    print('cor:', corfibra[11], '\ngrupo: ', int(grupo))
+else :
+    print('cor:', corfibra[n-1], '\ngrupo: ', int(grupo) + 1)
+
+print('## Número inválido')
 
 os.system("pause")
 
